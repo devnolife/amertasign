@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SignBridge - Home</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@500&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "on-tertiary-fixed-variant": "#3c475a",
+                "primary-fixed-dim": "#b2c5ff",
+                "on-background": "#191c1e",
+                "on-tertiary-container": "#c9d4ec",
+                "tertiary-fixed": "#d8e3fb",
+                "on-error": "#ffffff",
+                "surface-container-high": "#e6e8ea",
+                "on-secondary-fixed-variant": "#5e4200",
+                "secondary-container": "#fdb808",
+                "surface-container-lowest": "#ffffff",
+                "on-secondary-fixed": "#271900",
+                "on-tertiary-fixed": "#111c2d",
+                "background": "#f7f9fb",
+                "on-error-container": "#93000a",
+                "on-primary": "#ffffff",
+                "primary": "#003e9b",
+                "error": "#ba1a1a",
+                "outline": "#737785",
+                "inverse-primary": "#b2c5ff",
+                "primary-fixed": "#dae2ff",
+                "primary-container": "#0554ca",
+                "inverse-surface": "#2d3133",
+                "on-surface": "#191c1e",
+                "surface-variant": "#e0e3e5",
+                "on-primary-fixed": "#001847",
+                "on-secondary-container": "#6a4b00",
+                "tertiary-fixed-dim": "#bcc7de",
+                "secondary-fixed-dim": "#ffbb1a",
+                "on-primary-fixed-variant": "#0040a0",
+                "on-primary-container": "#c6d4ff",
+                "tertiary-container": "#515c70",
+                "tertiary": "#3a4458",
+                "on-surface-variant": "#424654",
+                "surface-container-highest": "#e0e3e5",
+                "surface-container-low": "#f2f4f6",
+                "surface-bright": "#f7f9fb",
+                "surface": "#f7f9fb",
+                "on-secondary": "#ffffff",
+                "secondary": "#7c5800",
+                "surface-container": "#eceef0",
+                "inverse-on-surface": "#eff1f3",
+                "surface-dim": "#d8dadc",
+                "surface-tint": "#0e57cd",
+                "on-tertiary": "#ffffff",
+                "error-container": "#ffdad6",
+                "outline-variant": "#c3c6d6",
+                "secondary-fixed": "#ffdea7"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+        },
+        "spacing": {
+                "margin-desktop": "40px",
+                "stack-sm": "8px",
+                "stack-md": "16px",
+                "margin-mobile": "16px",
+                "gutter": "24px",
+                "unit": "4px",
+                "stack-lg": "32px"
+        },
+        "fontFamily": {
+                "headline-lg-mobile": [
+                        "Manrope"
+                ],
+                "label-md": [
+                        "JetBrains Mono"
+                ],
+                "body-lg": [
+                        "Inter"
+                ],
+                "headline-md": [
+                        "Manrope"
+                ],
+                "headline-lg": [
+                        "Manrope"
+                ],
+                "body-md": [
+                        "Inter"
+                ]
+        },
+        "fontSize": {
+                "headline-lg-mobile": [
+                        "24px",
+                        {
+                                "lineHeight": "32px",
+                                "fontWeight": "700"
+                        }
+                ],
+                "label-md": [
+                        "12px",
+                        {
+                                "lineHeight": "16px",
+                                "letterSpacing": "0.05em",
+                                "fontWeight": "500"
+                        }
+                ],
+                "body-lg": [
+                        "16px",
+                        {
+                                "lineHeight": "24px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "headline-md": [
+                        "24px",
+                        {
+                                "lineHeight": "32px",
+                                "fontWeight": "600"
+                        }
+                ],
+                "headline-lg": [
+                        "32px",
+                        {
+                                "lineHeight": "40px",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "700"
+                        }
+                ],
+                "body-md": [
+                        "14px",
+                        {
+                                "lineHeight": "20px",
+                                "fontWeight": "400"
+                        }
+                ]
+        }
+},
+    },
+  }
+</script>
+<style>
+        body {
+            -webkit-tap-highlight-color: transparent;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen pb-24 font-body-md">
+<!-- TopAppBar -->
+<header class="w-full top-0 sticky bg-surface dark:bg-surface-dim flat no shadows z-40">
+<div class="flex justify-between items-center px-margin-mobile py-4 w-full max-w-screen-xl mx-auto">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full overflow-hidden bg-primary-container">
+<img alt="User profile photo" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzLw4UXmrsgM97AppzOyLWyxSUM0dHHth9wktXhqIkk2AQ1GYoJaLT0GZODoXv-XENUEYar6ZC4TicelTh6NIa1Vd_szDc0l9s3eqy-cLMiDkIa1UzBItCDkMrzjIbphU_amKaLDBm9rVqIhfnPH_tWZqvS_ewY8j_b8z66V3VZ8wSbeb-3c3_zv6d4a_dhEc-58jQWmPF5KK8xrqh2o3jVPSHZ3philRTcJEoJw8155cPwe75J_82uCBZg1eetWfqmidgzgtO0SE"/>
+</div>
+<h1 class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed-dim">SignBridge</h1>
+</div>
+<button class="w-10 h-10 rounded-full flex items-center justify-center hover:bg-surface-variant transition-colors text-primary dark:text-primary-fixed-dim">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">search</span>
+</button>
+</div>
+</header>
+<main class="max-w-screen-xl mx-auto px-margin-mobile md:px-margin-desktop space-y-stack-md md:space-y-stack-lg pt-4">
+<!-- Welcome Header -->
+<section class="bg-secondary-container rounded-xl p-6 relative overflow-hidden shadow-[0px_10px_30px_rgba(0,0,0,0.04)]">
+<div class="relative z-10 w-2/3">
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-secondary-container mb-2">Hello, Alex!<br/>Ready to learn?</h2>
+</div>
+<div class="absolute right-[-20px] bottom-[-20px] w-48 h-48 opacity-80 pointer-events-none">
+<img class="w-full h-full object-contain mix-blend-multiply opacity-50" data-alt="A stylized, warm-toned illustration of hands forming sign language gestures against a vibrant yellow background, conveying a welcoming and educational mood in a modern minimalist style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnf32zWEIhgUj7-QOda8ytEp9s_XjKbLkVOmx9BGJAiBcsUGeCaqxv6SuIA5QIYdksYuFsSRNPSoeIX-E-Ugw1aGU8hP_sKPqUPFyudErrRSZEgzPs7dyKDdyZaJzH-dOriuii5-_nBspUrliNRnE61JfFeF_SY8vUS_MUu30VI1-3KFK16HDWYgwgyIvFROWOP7NJXdvoXlCGyJRPq8N_E19noweZDVcN9_H_lISqRRyOpD4DhDbmzgMiK4JQ7BGixNgwYNouDIU" style="clip-path: circle(40% at 50% 50%);"/>
+</div>
+</section>
+<!-- Quick Actions -->
+<section class="grid grid-cols-2 gap-4">
+<button class="bg-primary-container rounded-xl p-6 flex flex-col items-center justify-center gap-3 shadow-[0px_10px_30px_rgba(0,0,0,0.04)] hover:opacity-90 transition-opacity scale-100 hover:scale-[1.02] duration-200">
+<div class="w-12 h-12 rounded-full bg-on-primary flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">photo_camera</span>
+</div>
+<span class="font-label-md text-label-md text-on-primary-container text-center">Translate Sign</span>
+</button>
+<button class="bg-primary-container rounded-xl p-6 flex flex-col items-center justify-center gap-3 shadow-[0px_10px_30px_rgba(0,0,0,0.04)] hover:opacity-90 transition-opacity scale-100 hover:scale-[1.02] duration-200">
+<div class="w-12 h-12 rounded-full bg-on-primary flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">mic</span>
+</div>
+<span class="font-label-md text-label-md text-on-primary-container text-center">Text to Sign</span>
+</button>
+</section>
+<!-- Learning Progress -->
+<section class="bg-surface-container-lowest rounded-xl p-6 shadow-[0px_10px_30px_rgba(0,0,0,0.04)]">
+<p class="font-label-md text-label-md text-on-surface-variant mb-1 uppercase tracking-wider">Daily Lesson</p>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-6">Your Path to Fluency</h3>
+<div class="flex items-center justify-between gap-4">
+<div class="flex-1">
+<p class="font-label-md text-label-md text-on-surface mb-2">Lesson 5: Greetings &amp; Introductions - 70% Complete</p>
+<div class="h-3 w-full bg-surface-variant rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 70%;"></div>
+</div>
+</div>
+<button class="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-on-primary hover:bg-primary/90 transition-colors shrink-0 shadow-sm">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+</div>
+</section>
+<!-- Word of the Day -->
+<section>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">Word of the Day</h3>
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0px_10px_30px_rgba(0,0,0,0.04)] relative group cursor-pointer block">
+<div class="h-48 w-full bg-error-container relative">
+<img class="w-full h-full object-cover" data-alt="A close-up, softly lit 3D render of human hands gracefully performing the sign language gesture for 'Kindness' against a warm, pastel pink background. The aesthetic is modern, clean, and highly legible, reflecting a friendly educational tone." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDs8q-YtQirT7ZH6uiJB-ToxzI6fIWRaftYFC1L-pQXCNnPba75pEgFXlZUsBju6DXUhgwOZ_4RB0ffgImXHWRK2I2j1h4bxh_WtIRFI0KhHE7GxrThv0CQ5ArgVg8kjPVDtGQEMioECMIkm_DCMsVOz-0E14PozRatFuNq0SxV8tnMAHBS5ZcjrvyoT_LUMAbxJj_1swT4Eb3wHU5V2LcLL48tKSRvQjnTa5Jb_-W4C-35OzkDGdPRUqXJpMqoXx7N9JH9W7suZAU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+</div>
+<div class="p-4 flex justify-between items-center bg-surface-container-lowest">
+<span class="font-headline-md text-headline-md text-on-surface">Kindness</span>
+<button class="w-10 h-10 rounded-full flex items-center justify-center hover:bg-surface-variant transition-colors text-error">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">favorite</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Quick Access Grid -->
+<section>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">Quick Access</h3>
+<div class="grid grid-cols-3 gap-3">
+<button class="bg-tertiary-fixed rounded-xl p-4 flex flex-col items-center justify-center gap-2 shadow-[0px_10px_30px_rgba(0,0,0,0.04)] hover:bg-tertiary-fixed-dim transition-colors h-28">
+<span class="material-symbols-outlined text-on-tertiary-container text-2xl" style="font-variation-settings: 'FILL' 0;">health_and_safety</span>
+<span class="font-label-md text-label-md text-on-tertiary-container text-center leading-tight">Emergency<br/>Signs</span>
+</button>
+<button class="bg-error-container rounded-xl p-4 flex flex-col items-center justify-center gap-2 shadow-[0px_10px_30px_rgba(0,0,0,0.04)] hover:bg-error-container/80 transition-colors h-28">
+<span class="material-symbols-outlined text-on-error-container text-2xl" style="font-variation-settings: 'FILL' 0;">sort_by_alpha</span>
+<span class="font-label-md text-label-md text-on-error-container text-center leading-tight">Alphabet<br/>Practice</span>
+</button>
+<button class="bg-tertiary-fixed rounded-xl p-4 flex flex-col items-center justify-center gap-2 shadow-[0px_10px_30px_rgba(0,0,0,0.04)] hover:bg-tertiary-fixed-dim transition-colors h-28">
+<span class="material-symbols-outlined text-on-tertiary-container text-2xl" style="font-variation-settings: 'FILL' 0;">bookmarks</span>
+<span class="font-label-md text-label-md text-on-tertiary-container text-center leading-tight">Saved<br/>Phrases</span>
+</button>
+</div>
+</section>
+<!-- Recommended Lessons -->
+<section class="pb-8">
+<div class="flex justify-between items-end mb-4">
+<h3 class="font-headline-md text-headline-md text-on-surface">Recommended Lessons</h3>
+<button class="font-label-md text-label-md text-primary hover:underline">See All</button>
+</div>
+<div class="flex gap-4 overflow-x-auto hide-scrollbar pb-4 snap-x snap-mandatory">
+<div class="snap-start shrink-0 w-64 bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0px_10px_30px_rgba(0,0,0,0.04)]">
+<div class="h-32 w-full relative bg-surface-variant">
+<img class="w-full h-full object-cover" data-alt="A medium shot of a friendly professional instructor demonstrating sign language in a bright, modern studio with a minimalist grey background. The lighting is soft and even, highlighting hand movements clearly." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7eG4K0bX0iWU4XnDF5MyH7BJ_--eSCi3VXTeIQCiZVfPEvt7NL71t6ICBBoBNepCr34hoLTvHRTknyqguljtx-KB06OSWugFvIXDdlHvp-iRi5bBi6ZihOv6Dex4Umlz28UKrIP2yP0wqX-j--PERHVuRrHsQKNWFz1NBeARBpiKvim8RB-OlH1owuZv9R_w4XYR2kVOuTKrBW0fyrts8n1iWDAYhPETaDtZ85ww9zYt4fDSotb9J9r52d9z23g3dqYoHxZtuB9U"/>
+<div class="absolute bottom-2 right-2 bg-black/50 text-white font-label-md text-[10px] px-2 py-1 rounded-md backdrop-blur-sm">4:20</div>
+</div>
+<div class="p-4">
+<span class="inline-block px-2 py-1 bg-tertiary-fixed text-on-tertiary-container font-label-md text-[10px] rounded-full mb-2">Beginner</span>
+<h4 class="font-label-md text-label-md text-on-surface line-clamp-2">Basic Greetings in ASL</h4>
+</div>
+</div>
+<div class="snap-start shrink-0 w-64 bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0px_10px_30px_rgba(0,0,0,0.04)]">
+<div class="h-32 w-full relative bg-surface-variant">
+<img class="w-full h-full object-cover" data-alt="A medium shot of an encouraging female instructor demonstrating sign language in a warm, inviting living room setting. Soft natural light streams in, creating a relaxed and educational atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQK_hkqr1JvWGC4mKBZ531G6xWZbLZ_s-g_U0oOfL58Tmt88Dc99S1wcmaJp_kcZ52YqX4TtGBuWG1NNEtmlh9YeM2d-jpWj09y54-egR8TAYPBQQoOSYzRJbGqr5mPdJw1-Yi64UuVwJNDl1B0TIPbPSTzma5w_KbkBTgL_UPH4yITHnbm8JTa9CcjVBHwCcNEerNjZQlNvPUOK93Xvt4o3jK78zI5CPPy9RS63AG8an0wqQVCwKEn5xUXv1zwssDaMORNRQI2vY"/>
+<div class="absolute bottom-2 right-2 bg-black/50 text-white font-label-md text-[10px] px-2 py-1 rounded-md backdrop-blur-sm">6:15</div>
+</div>
+<div class="p-4">
+<span class="inline-block px-2 py-1 bg-secondary-container text-on-secondary-container font-label-md text-[10px] rounded-full mb-2">Intermediate</span>
+<h4 class="font-label-md text-label-md text-on-surface line-clamp-2">Expressing Emotions</h4>
+</div>
+</div>
+<div class="snap-start shrink-0 w-4"></div> <!-- padding spacer -->
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 py-3 pb-safe bg-surface-container-lowest dark:bg-inverse-surface shadow-[0px_-10px_30px_rgba(0,0,0,0.04)] dark:shadow-none z-50 rounded-t-xl md:hidden">
+<a class="flex flex-col items-center justify-center bg-secondary-container dark:bg-secondary-fixed-variant text-on-secondary-container dark:text-on-secondary-fixed rounded-full px-4 py-1 scale-102 transition-all duration-300" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-label-md text-label-md">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-4 py-1 hover:bg-surface-variant dark:hover:bg-surface-container-high transition-colors" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">videocam</span>
+<span class="font-label-md text-label-md">Live</span>
+</a><a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-4 py-1 hover:bg-surface-variant dark:hover:bg-surface-container-high transition-colors" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">person</span>
+<span class="font-label-md text-label-md">Profile</span>
+</a>
+</nav>
+</body></html>

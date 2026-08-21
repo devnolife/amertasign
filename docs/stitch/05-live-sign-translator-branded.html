@@ -1,0 +1,206 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">try{
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "on-tertiary-fixed-variant": "#3c475a",
+                "primary-fixed-dim": "#b2c5ff",
+                "on-background": "#191c1e",
+                "on-tertiary-container": "#c9d4ec",
+                "tertiary-fixed": "#d8e3fb",
+                "on-error": "#ffffff",
+                "surface-container-high": "#e6e8ea",
+                "on-secondary-fixed-variant": "#5e4200",
+                "secondary-container": "#fdb808",
+                "surface-container-lowest": "#ffffff",
+                "on-secondary-fixed": "#271900",
+                "on-tertiary-fixed": "#111c2d",
+                "background": "#f7f9fb",
+                "on-error-container": "#93000a",
+                "on-primary": "#ffffff",
+                "primary": "#003e9b",
+                "error": "#ba1a1a",
+                "outline": "#737785",
+                "inverse-primary": "#b2c5ff",
+                "primary-fixed": "#dae2ff",
+                "primary-container": "#0554ca",
+                "inverse-surface": "#2d3133",
+                "on-surface": "#191c1e",
+                "surface-variant": "#e0e3e5",
+                "on-primary-fixed": "#001847",
+                "on-secondary-container": "#6a4b00",
+                "tertiary-fixed-dim": "#bcc7de",
+                "secondary-fixed-dim": "#ffbb1a",
+                "on-primary-fixed-variant": "#0040a0",
+                "on-primary-container": "#c6d4ff",
+                "tertiary-container": "#515c70",
+                "tertiary": "#3a4458",
+                "on-surface-variant": "#424654",
+                "surface-container-highest": "#e0e3e5",
+                "surface-container-low": "#f2f4f6",
+                "surface-bright": "#f7f9fb",
+                "surface": "#f7f9fb",
+                "on-secondary": "#ffffff",
+                "secondary": "#7c5800",
+                "surface-container": "#eceef0",
+                "inverse-on-surface": "#eff1f3",
+                "surface-dim": "#d8dadc",
+                "surface-tint": "#0e57cd",
+                "on-tertiary": "#ffffff",
+                "error-container": "#ffdad6",
+                "outline-variant": "#c3c6d6",
+                "secondary-fixed": "#ffdea7"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+        },
+        "spacing": {
+                "margin-desktop": "40px",
+                "stack-sm": "8px",
+                "stack-md": "16px",
+                "margin-mobile": "16px",
+                "gutter": "24px",
+                "unit": "4px",
+                "stack-lg": "32px"
+        },
+        "fontFamily": {
+                "headline-lg-mobile": [
+                        "Manrope"
+                ],
+                "label-md": [
+                        "JetBrains Mono"
+                ],
+                "body-lg": [
+                        "Inter"
+                ],
+                "headline-md": [
+                        "Manrope"
+                ],
+                "headline-lg": [
+                        "Manrope"
+                ],
+                "body-md": [
+                        "Inter"
+                ]
+        },
+        "fontSize": {
+                "headline-lg-mobile": [
+                        "24px",
+                        {
+                                "lineHeight": "32px",
+                                "fontWeight": "700"
+                        }
+                ],
+                "label-md": [
+                        "12px",
+                        {
+                                "lineHeight": "16px",
+                                "letterSpacing": "0.05em",
+                                "fontWeight": "500"
+                        }
+                ],
+                "body-lg": [
+                        "16px",
+                        {
+                                "lineHeight": "24px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "headline-md": [
+                        "24px",
+                        {
+                                "lineHeight": "32px",
+                                "fontWeight": "600"
+                        }
+                ],
+                "headline-lg": [
+                        "32px",
+                        {
+                                "lineHeight": "40px",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "700"
+                        }
+                ],
+                "body-md": [
+                        "14px",
+                        {
+                                "lineHeight": "20px",
+                                "fontWeight": "400"
+                        }
+                ]
+        }
+},
+    },
+  }
+}catch(_e){}</script></head><body class="bg-surface text-on-surface h-screen flex flex-col overflow-hidden font-body-md">
+<!-- Top App Bar (Modified for Task Focus) -->
+<header class="flex justify-between items-center px-margin-mobile py-stack-sm w-full bg-surface z-50 shrink-0">
+<button aria-label="Go back" class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined text-on-surface-variant text-[28px]" data-icon="chevron_left">chevron_left</span>
+</button>
+<h1 class="font-headline-md text-headline-md font-bold text-on-surface">Live Sign Translator</h1>
+<button aria-label="Settings" class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined text-on-surface-variant text-[24px]" data-icon="settings">settings</span>
+</button>
+</header>
+<!-- Main Content Area -->
+<main class="flex-1 flex flex-col relative h-full w-full max-w-[1280px] mx-auto overflow-hidden">
+<!-- Video Feed Area (Top Half) -->
+<section class="relative w-full h-[50%] md:h-[60%] shrink-0 bg-surface-container-high overflow-hidden">
+<!-- Simulated Camera Feed -->
+<img class="w-full h-full object-cover" data-alt="A young woman with brown hair looking directly at the camera, holding both hands up with palms facing forward in an open hand gesture. She is wearing a plain black t-shirt against a clean, well-lit white studio background. The lighting is soft and even, creating a professional, neutral aesthetic typical of modern video communication or sign language translation applications." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBqcnlBLzP-cEde7EusBkDbAQlzPDBRxSIvCsuVMTzwF-lbrfCuKKQmYEWQfhw35v7F_Xa6NvIhB2v6PZzwuIiEA5DkBy0uDnQF2J-ZtNOYgT_1KgQkcSAWH35GuLJ8fGtalRPNy-hVUz2My2jWS7brgnPifO0I4S9Aj79-kAO0sre2HP7Tk88AxJIYdoK0rhssI1AaDc1Sg11j5Sny5dfno0NXI-dZj3Tj1ESJBmV2grhfOOSLA_RC_GIu2roRvMMfIUHMTDri7o">
+<!-- AI Bounding Box Overlay -->
+<div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+<div class="relative w-[70%] h-[50%] border-4 border-primary-container rounded-xl md:w-[50%] md:h-[60%]">
+<!-- Confidence Badge -->
+<div class="absolute -top-10 left-[-4px] bg-primary-container text-on-primary font-label-md text-label-md px-4 py-2 rounded-t-lg rounded-br-lg shadow-sm">
+                        Thank You 98%
+                    </div>
+</div>
+</div>
+<!-- Recording Indicator -->
+<div class="absolute top-4 right-4 flex items-center gap-2 bg-inverse-surface/80 backdrop-blur-sm px-3 py-1.5 rounded-full shadow-sm">
+<div class="w-2 h-2 rounded-full bg-error animate-pulse"></div>
+<span class="font-label-md text-label-md text-inverse-on-surface">Live</span>
+</div>
+</section>
+<!-- Translation Card Area (Bottom Half) -->
+<section class="relative w-full h-[50%] md:h-[40%] bg-surface-container-low z-10 rounded-t-3xl shadow-[0px_-10px_30px_rgba(0,0,0,0.04)] -mt-6 flex flex-col flex-1">
+<!-- Drag Handle for Mobile -->
+<div class="w-full flex justify-center py-3 shrink-0 md:hidden">
+<div class="w-12 h-1.5 rounded-full bg-outline-variant/50"></div>
+</div>
+<!-- Chat History (Scrollable) -->
+<div class="flex-1 overflow-y-auto no-scrollbar px-margin-mobile pt-4 pb-32 md:px-margin-desktop md:pt-8">
+<div class="flex flex-col gap-stack-md max-w-3xl mx-auto w-full">
+<!-- Past Translation Bubble -->
+<div class="self-start max-w-[85%]">
+<div class="bg-surface-variant text-on-surface font-body-md text-body-md p-4 rounded-2xl rounded-tl-sm shadow-sm">
+                            Hello, my name is Alex.
+                        </div>
+<span class="text-xs text-on-surface-variant mt-1 ml-1 font-label-md block opacity-70">10:42 AM</span>
+</div>
+<!-- Past Translation Bubble -->
+<div class="self-start max-w-[85%]">
+<div class="bg-surface-variant text-on-surface font-body-md text-body-md p-4 rounded-2xl rounded-tl-sm shadow-sm">
+                            I am using this app to communicate.
+                        </div>
+<span class="text-xs text-on-surface-variant mt-1 ml-1 font-label-md block opacity-70">10:43 AM</span>
+</div>
+<!-- Current Translation Bubble (Highlighted) -->
+<div class="self-start w-full mt-4">
+<div class="bg-surface text-on-surface border border-primary-container/20 shadow-lg p-6 md:p-8 rounded-3xl rounded-tl-xl transition-all duration-300 transform translate-y-0">
+<p class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-center md:text-left text-on-surface">
+                                Thank You for your help. I appreciate it.
+                            </p>
+<!-- Typist indicator for 'live' feel -->
+<div class="flex items-center gap-1 mt-4 opacity-50 justify-center md:justify-start">
+<div class="w-2 h-2 rounded-full bg-primary-container animate-bounce" style="animation-delay: 0s"></div>
+<div class="w-2 h-2 rounded-full bg-primary-container animate-bounce" style="animation-delay: 0.2s"></div>
+</div></div></div></div></div></section></main>
+
+<nav class="bg-surface border-t border-outline-variant px-margin-mobile py-2 flex justify-between items-center w-full shrink-0 z-50"><button class="flex flex-col items-center gap-1 flex-1 py-2 text-on-surface-variant"><span class="material-symbols-outlined text-[24px]">home</span><span class="text-label-md font-label-md">Home</span></button><button class="flex flex-col items-center gap-1 flex-1 py-2 text-primary-container"><span class="material-symbols-outlined text-[24px] fill">videocam</span><span class="text-label-md font-label-md">Live</span></button><button class="flex flex-col items-center gap-1 flex-1 py-2 text-on-surface-variant"><span class="material-symbols-outlined text-[24px]">settings</span><span class="text-label-md font-label-md">Settings</span></button></nav></body></html>
